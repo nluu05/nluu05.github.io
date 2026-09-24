@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, 
+    initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo"><span>Nhi Luu</span></a>
+
+    <ul class="nav-links">
+      <li>
+        <a href="#about">About</a>
+      </li>
+
+      <li>
+        <a href="#experience">Experience</a>
+      </li>
+
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+    <a class="visit-btn" href="https://github.com/nluu05" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
+  </header>
+
+  <section id="about" class="about">
+    <div class="about-container">
+      <img src="profile.jpg" alt="Profile Picture">
+
+      <div class="info-box">
+        <div>
+          <h3>Hi! I'm</h3>
+          <h1>Nhi Luu</h1>
+          <span>Software Engineering Student</span>
+          <p class="intro-text">
+            I'm a third-year Software Engineering student at the University of Nebraska-Lincoln.
+            I enjoy frontend development and creating websites that are both easy to use and visually appealing.
+          </p>
+        </div>
+
+        <div class="btn-group">
+          <a class="btn" href="Resume - Nhi Luu.pdf" download>Download CV</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+
+        <div class="socials">
+          <a href="https://github.com/nluu05" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        
+          <a href="https://www.linkedin.com/in/YOUR-PROFILE/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+
+    <h2 class="section-title">Experience</h2>
+
+    <div class="experience-info">
+      <div class="grid">
+        <div class="grid-card">
+          <i class="fa-regular fa-file-code"></i>
+          <span>Web</span>
+          <h3>Frontend Development</h3>
+          <p>HTML, CSS, JavaScript, and TypeScript. I enjoy building clear, interactive websites.</p>
+        </div>
+        
+        <div class="grid-card">
+          <i class="fa-solid fa-code"></i>
+          <span>Programming</span>
+          <h3>Python & Java</h3>
+          <p>I use Python and Java for coursework, problem solving, and software projects.</p>
+        </div>
+        
+        <div class="grid-card">
+          <i class="fa-solid fa-laptop"></i>
+          <span>Integrations</span>
+          <h3>Working with APIs</h3>
+          <p>I've connected projects to weather and cryptocurrency APIs to bring external data into my applications.</p>
+        </div>
+        
+        <div class="grid-card">
+          <i class="fa-solid fa-list-ul"></i>
+          <span>Tools</span>
+          <h3>Development & Collaboration</h3>
+          <p>Git, GitHub, GitLab, VS Code, IntelliJ IDEA, PyCharm, and the terminal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img src="allergypal.png" alt="allergyPal">
+        <h3>AllergyPal</h3>
+        <p>Lorem</p>
+        <div class="btn-group">
+          <div class="btn">Live Demo</div>
+          <div class="btn">GitHub Repo</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="personalwebsite.png" alt="personalWebsite">
+        <h3>Personal Website</h3>
+        <p>Lorem</p>
+        <div class="btn-group">
+          <div class="btn">Live Demo</div>
+          <div class="btn">GitHub Repo</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="project-3.jpg" alt="project-3">
+        <h3>Project X</h3>
+        <p>Lorem </p>
+        <div class="btn-group">
+          <div class="btn">Live Demo</div>
+          <div class="btn">GitHub Repo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="contact-subtitle">
+      Have a question or want to work together? I'd love to hear from you.
+    </p>
+  
+    <div class="contact-container">
+      <form class="contact-form" id="contact-form">
+        <label for="contact-name">Name</label>
+        <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+  
+        <label for="contact-email">Email</label>
+        <input type="email" id="contact-email" name="email" placeholder="Your email" required>
+  
+        <label for="contact-subject">Subject</label>
+        <input type="text" id="contact-subject" name="subject" placeholder="What's this about?" required>
+  
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message" rows="6"
+          placeholder="Write your message here..." required></textarea>
+  
+        <button type="submit" class="contact-button">
+          <i class="fa-regular fa-paper-plane"></i>
+          Send Message
+        </button>
+      </form>
+  
+      <div class="contact-info">
+        <span class="contact-label">LET'S CONNECT</span>
+        <h3>Let's get in touch!</h3>
+        <p>
+          I'm always happy to talk about projects, frontend development,
+          and internship opportunities.
+        </p>
+  
+        <a class="contact-link" href="mailto:nluu05@gmail.com">
+          <i class="fa-regular fa-envelope"></i>
+          <span>nluu05@gmail.com</span>
+        </a>
+
+        <div class="contact-link">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Lincoln, Nebraska</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
